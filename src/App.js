@@ -1,13 +1,20 @@
-import './App.css'
-import Button from '@mui/material/Button';
+import "./App.css";
+import TourCard from "./components/TourCard";
+import { Grid } from "@mui/material";
+import { Container } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-     <Button variant="contained" onClick={()=>alert('hello World')}
-     >Hello world</Button>
-    </div>
-  );
+   
+      <Container>
+        <Grid container spacing={4}>
+          <TourCard />
+          <TourCard />
+          <TourCard />
+          <TourCard />
+        </Grid>
+      </Container>
+      );
 }
 
 export default App;
